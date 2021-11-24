@@ -1,0 +1,11 @@
+version: "3.7"
+services:
+  mariadb:
+    image: mariadb:10.7
+    build: .
+    command: mariadbd
+    environment:
+      MARIADB_ROOT_PASSWORD: 123123
+      MARIADB_DATABASE: banksoal
+      MARIADB_USER: basouser
+      MARIADB_PASSWORD: basopass
